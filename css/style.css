@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "fuente";
+  src: url(../fuentes/Zenzai\ Itacha.ttf);
+}
+
+html {
+  background-image: url("../images/mtrix.jpg");
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+/* .text-area {
+  background-color: transparent;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+}
+
+nav {
+  width: auto;
+  height: 100px;
+  background-color: black;
+  display: flex;
+}
+
+.logo {
+  padding-top: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+  filter: brightness(100);
+  width: 150px;
+  height: 65px;
+}
+
+.titulo {
+  color: white;
+  margin-left: 35%;
+}
+
+.titulo h1 {
+  font-size: 80px;
+  font-family: "fuente";
+}
+
+.footer {
+  width: 100%;
+  /* width: 20%; */
+  height: 89px;
+  background-color: black;
+  display: flex;
+}
+h2 {
+  color: white;
+  font-size: 46px;
+  font-family: "fuente";
+  margin-left: 1%;
+}
+
+h6 {
+  color: white;
+}
+
+main {
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: 200px;
+}
+
+.text-area {
+  border: none;
+  color: white;
+  background-color: black;
+  margin-top: 90px;
+  text-transform: lowercase;
+}
+::placeholder {
+  color: white;
+}
+.text-area:focus {
+  outline: none;
+}
+
+.mensaje {
+  text-transform: lowercase;
+  background-image: url("../images/Muñeco.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  color: white;
+  background-color: black;
+  margin: 90px 100px 0px 350px;
+  padding-left: 20px;
+  position: fixed;
+}
+
+.mensaje:focus {
+  outline: none;
+}
+
+.mensaje::selection {
+  background-color: transparent;
+}
+
+.botones {
+  display: flex;
+  margin-top: 18px;
+}
+.btn-encriptar {
+  background-color: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: white;
+  cursor: pointer;
+  height: 67px;
+  width: 328px;
+}
+.btn-desencriptar {
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #0a3871;
+  cursor: pointer;
+  height: 67px;
+  margin-left: 30px;
+  width: 328px;
+}
+
+.copiar {
+  background: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: white;
+  cursor: pointer;
+  height: 67px;
+  margin-left: 350px;
+  margin-top: 630px;
+  position: absolute;
+  width: 550px;
+}
+
+.informacion {
+  color: white;
+  background-color: black;
+  width: 53%;
+  font-size: 20px;
+}

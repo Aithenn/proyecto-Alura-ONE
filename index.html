@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Encriptador</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <img src="./images/Logo.png" alt="logo-Alura" class="logo" />
+        <div class="titulo"><h1>Encriptador</h1></div>
+      </nav>
+    </header>
+
+    <main>
+      <secction>
+        <textarea
+          class="text-area"
+          cols="40"
+          rows="10"
+          placeholder="Ingrese el texto aqui"
+          onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"
+        ></textarea>
+
+        <div>
+          <h6 class="informacion">⚠ Solo letras minúsculas y sin acentos</h6>
+        </div>
+
+        <div class="botones">
+          <button class="btn-encriptar" onclick="btnEncriptar()">
+            Encriptar
+          </button>
+
+          <button class="btn-desencriptar" onclick="btnDesencriptar()">
+            Desencriptar
+          </button>
+        </div>
+      </secction>
+
+      <secction onclick="mostrarImagen()">
+        <textarea
+          onclick="eliminarImagen()"
+          class="mensaje"
+          cols="30"
+          rows="10"
+          placeholder="Ingrese el texto aqui"
+          onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"
+        ></textarea>
+
+        <div>
+          <button class="copiar" onclick="copiar()">Copiar</button>
+        </div>
+      </secction>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <h6>
+          Creado por:
+          <h2>Aithen Bernal</h2>
+        </h6>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/imagen.js"></script>
+  </body>
+</html>
