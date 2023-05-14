@@ -43,12 +43,16 @@ nav {
   height: 65px;
 }
 
-.titulo {
+/* .titulo {
   color: white;
-  margin-left: 35%;
-}
+  margin-left: 100%;
+  font-size: 80px;
+  font-family: "fuente";
+} */
 
 .titulo h1 {
+  color: white;
+  margin-left: 700px;
   font-size: 80px;
   font-family: "fuente";
 }
@@ -154,4 +158,14 @@ main {
   background-color: black;
   width: 53%;
   font-size: 20px;
+}
+
+.contenedor {
+  width: 100%;
+}
+
+@media (max-width: 320px) {
+  nav {
+    width: 300%;
+  }
 }
